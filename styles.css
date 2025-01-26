@@ -1,0 +1,135 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: whitesmoke;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 70px; /* Offset for fixed navbar */
+}
+
+h1 {
+    color: #333;
+    font-size: xx-large;
+}
+
+/* Countdown Section */
+
+.countdownTitle {
+    font-size: 3rem;
+}
+
+#timer {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #555;
+}
+
+#timer span {
+    font-weight: bold;
+    color: #000;
+    font-size: 3.5rem;
+}
+
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+
+/* Wedding Details Section */
+.google-map {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.aboutUs {
+   margin-left: auto;
+   margin-right: auto;
+    text-align: center;
+    max-width: 1000px;
+}
