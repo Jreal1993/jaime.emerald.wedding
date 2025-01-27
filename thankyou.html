@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Thank You Paget</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="#countdown">Home</a></li>
+            <li><a href="#getToKnow">Get to Know Us</a></li>
+            <li><a href="#mySlides2">Location</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+    </nav>
+
+    <div class="RSVPMessage">
+        <h1 class="thankYouMessage">Thank you for RSVPing! We can't wait to see you there!</h1>
+        <h3><a href="index.html">Back to the Wedding Page</a></h3>
+    </div>
+        
+    <script>
+    //Hamburger Menu
+
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    })
+
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    }))
+    </script>
+</body>
+</html>
