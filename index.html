@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <ul class="nav-menu">
             <li><a href="#countdown">Home</a></li>
-            <li><a href="#about">Get to Know Us</a></li>
-            <li><a href="#location">Location</a></li>
+            <li><a href="#getToKnow">Get to Know Us</a></li>
+            <li><a href="#mySlides2">Location</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
     </nav>
 
     <!-- Countdown Section -->
@@ -28,9 +34,9 @@
     </section>
 
 
-<h1 style="text-align: center;">Get to Know the Bride and Groom</h1>
+<h1 id="getToKnow" style="text-align: center;">Get to Know the Bride and Groom</h1>
 <div class="slideshow-container">
-  <div class="mySlides1">
+  <div class="mySlides1" id="mySlides1">
     <img src="Em&JaimeChristmasLights.jpg" style="width:100%">
   </div>
 
@@ -50,10 +56,12 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Esse dolorum totam explicabo obcaecati harum commodi 
         rerum tempora in ad quidem, velit voluptates cupiditate 
-        eius possimus eligendi quisquam, quos quas aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        eius possimus eligendi quisquam, quos quas aliquam?Lorem 
+        ipsum dolor sit amet consectetur adipisicing elit. 
         Esse dolorum totam explicabo obcaecati harum commodi 
         rerum tempora in ad quidem, velit voluptates cupiditate 
-        eius possimus eligendi quisquam, quos quas aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        eius possimus eligendi quisquam, quos quas aliquam?Lorem 
+        ipsum dolor sit amet consectetur adipisicing elit. 
         Esse dolorum totam explicabo obcaecati harum commodi 
         rerum tempora in ad quidem, velit voluptates cupiditate 
         eius possimus eligendi quisquam, quos quas aliquam?</p>
@@ -61,7 +69,7 @@
 
 <h1 style="text-align: center;">Wedding Location</h1>
 <div class="slideshow-container">
-  <div class="mySlides2">
+  <div class="mySlides2" id="mySlides2">
     <img src="ketchikan town2.jpg" style="width:100%">
   </div>
 
@@ -79,19 +87,34 @@
 
 
     <!-- Wedding Details Section -->
+    <div class="weddingMap">
     <section id="weddingDetails">
         <h1>Wedding Details</h1>
         <p>84 Sunset Dr, <br>
             Ketchikan, AK 99901
         </p>
-        <div class="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9060.314435367918!2d-131.758729!3d55.408980199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x540c2655130bfb1f%3A0xd0e70e1611cceb0a!2sNorth%20Tongass%20Community%20Center!5e0!3m2!1sen!2sus!4v1737266124146!5m2!1sen!2sus" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9060.314435367918!2d-131.758729!3d55.408980199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x540c2655130bfb1f%3A0xd0e70e1611cceb0a!2sNorth%20Tongass%20Community%20Center!5e0!3m2!1sen!2sus!4v1737266124146!5m2!1sen!2sus" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
-
+       <br><br>
     </section>
+  </div>
 
+
+<!--RSVP Section-->   
+  <div class="rsvpSection" id="rsvp">
+    <h1>RSVP!</h1>
+    <div class="rsvpForm">
+    <form action="https://formsubmit.co/jaime.real.gutierrez@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Jaime Real" required>
+      <input type="text" name="message" placeholder="I'll be there!" required>
+      <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+      <button type="submit">Send</button>
+    </form>
+    </div>
     
+  </div>
 
 
     <script>
@@ -141,6 +164,20 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
+
+//Hamburger Menu
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+hamburger.addEventListener('click', () => {
+   hamburger.classList.toggle('active');
+   navMenu.classList.toggle('active');
+})
+
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}))
     </script>
 </body>
 </html>
