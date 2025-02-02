@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="nav">
+    <nav class="navbar">
+      <img src="J&E.png" width="100px" height="auto" class="jandE">
+        <ul class="nav-menu">
+            <li class="nav-link"><a href="#countdown">Home</a></li>
+            <li class="nav-link"><a href="#getToKnow">Get to Know Us</a></li>
+            <li class="nav-link"><a href="#weddingLocation">Location</a></li>
+            <li class="nav-link"><a href="#rsvp">RSVP</a></li>
+            <li class="nav-link" id="gifts"><a href="#gifts">Gifts</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+    </nav>
+  </div>
+
+
+    <!-- Countdown Section -->
+    <h1 class="only">Only</h1>
+    <section id="countdown">
+        <div id="timer">
+            <span id="days">0</span> Days 
+            <span id="hours">0</span> Hours 
+            <span id="minutes">0</span> Minutes 
+        </div>
+        <h1 class="till">Till the Wedding!</h1>
+    </section>
+
+
+<div class="slideshow-container">
+  <div class="mySlides1" id="mySlides1">
+    <img src="Em&JaimeChristmasLights.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Em&JaimeinCanada.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="ProposalPicture.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+  
+</div>
+
+<div class="aboutUs">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Esse dolorum totam explicabo obcaecati harum commodi 
+        rerum tempora in ad quidem, velit voluptates cupiditate 
+        eius possimus eligendi quisquam, quos quas aliquam?Lorem 
+        ipsum dolor sit amet consectetur adipisicing elit. 
+        Esse dolorum totam explicabo obcaecati harum commodi 
+        rerum tempora in ad quidem, velit voluptates cupiditate 
+        eius possimus eligendi quisquam, quos quas aliquam?Lorem 
+        ipsum dolor sit amet consectetur adipisicing elit. 
+        Esse dolorum totam explicabo obcaecati harum commodi 
+        rerum tempora in ad quidem, velit voluptates cupiditate 
+        eius possimus eligendi quisquam, quos quas aliquam?</p>
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides2" id="mySlides2">
+    <img src="ketchikan town2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="kayak2.jpg" style="width:100%" >
+  </div>
+
+  <div class="mySlides2">
+    <img src="OsoWithSalmon2.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<div class="ketchikan">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Esse dolorum totam explicabo obcaecati harum commodi 
+      rerum tempora in ad quidem, velit voluptates cupiditate 
+      eius possimus eligendi quisquam, quos quas aliquam?Lorem 
+      ipsum dolor sit amet consectetur adipisicing elit. 
+      Esse dolorum totam explicabo obcaecati harum commodi 
+      rerum tempora in ad quidem, velit voluptates cupiditate 
+      eius possimus eligendi quisquam, quos quas aliquam?Lorem 
+      ipsum dolor sit amet consectetur adipisicing elit. 
+      Esse dolorum totam explicabo obcaecati harum commodi 
+      rerum tempora in ad quidem, velit voluptates cupiditate 
+      eius possimus eligendi quisquam, quos quas aliquam?</p>
+</div>
+
+
+    <!-- Wedding Details Section -->
+    <div class="weddingMap">
+    <section id="weddingDetails">
+        <h1>Wedding Details</h1>
+        <p>84 Sunset Dr, <br>
+            Ketchikan, AK 99901
+        </p>
+        <div>
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9060.314435367918!2d-131.758729!3d55.408980199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x540c2655130bfb1f%3A0xd0e70e1611cceb0a!2sNorth%20Tongass%20Community%20Center!5e0!3m2!1sen!2sus!4v1737266124146!5m2!1sen!2sus" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+       <br><br>
+    </section>
+  </div>
+
+
+<!--RSVP Section-->   
+  <div class="rsvpSection" id="rsvp">
+    <h1>RSVP!</h1>
+    <div class="rsvpForm">
+    <form action="https://formsubmit.co/jaime.real.gutierrez@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Jaime Real" required>
+      <input type="text" name="message" placeholder="I'll be there!" required>
+      <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+      <button type="submit">Send</button>
+    </form>
+    </div>
+    
+  </div>
+
+
+    <script>
+        // Countdown Timer
+        const countdownDate = new Date("July 8, 2025 00:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeRemaining = countdownDate - now;
+
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+
+            if (timeRemaining < 0) {
+                clearInterval(timerInterval);
+                document.getElementById("timer").textContent = "The Big Day is Here!";
+            }
+        }
+
+        const timerInterval = setInterval(updateCountdown, 1000);
+
+
+
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+//Hamburger Menu
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+hamburger.addEventListener('click', () => {
+   hamburger.classList.toggle('active');
+   navMenu.classList.toggle('active');
+})
+
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}))
+    </script>
+</body>
+</html>
