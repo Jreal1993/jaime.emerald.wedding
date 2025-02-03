@@ -10,6 +10,18 @@ body {
     background: linear-gradient(to left, black, #333);
 }
 
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.hotel {
+    list-style: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1.5rem;
+}
 
 nav {
     background: linear-gradient(to left, black, #333);
@@ -56,6 +68,7 @@ section {
     text-align: center;
     margin-top: 70px; /* Offset for fixed navbar */
 }
+
 
 h1 {
     color: #d6a553;
@@ -209,7 +222,6 @@ h1 {
     height: 500px;
     width: 100%;
     max-width: 1200px;
-    margin-top: 1rem;
     padding-bottom: 1rem;
     border: none;
 }
@@ -249,7 +261,11 @@ h1 {
     margin-right: auto;
     text-align: center;
     max-width: 1000px;
-    margin-bottom: 1rem;
+}
+
+.fishing {
+    text-decoration: none;
+    color:whitesmoke;
 }
 
 .weddingMap {
@@ -370,5 +386,5 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
-    color: #d6a553;
+    color: whitesmoke;
 }
