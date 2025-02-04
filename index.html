@@ -12,11 +12,11 @@
     <nav class="navbar">
       <img src="J&E.png" width="100px" height="auto" class="jandE">
         <ul class="nav-menu">
-            <li class="nav-link"><a href="#countdown">Home</a></li>
-            <li class="nav-link"><a href="#getToKnow">Get to Know Us</a></li>
-            <li class="nav-link"><a href="#weddingLocation">Location</a></li>
+            <li class="nav-link"><a href="#top">Home</a></li>
+            <li class="nav-link"><a href="#countdown">Get to Know Us</a></li>
+            <li class="nav-link"><a href="#ketchikan">Location</a></li>
             <li class="nav-link"><a href="#rsvp">RSVP</a></li>
-            <li class="nav-link" id="gifts"><a href="#gifts">Gifts</a></li>
+            <li class="nav-link" id="gifts"><a href="#button">Gifts</a></li>
         </ul>
         <div class="hamburger">
           <span class="bar"></span>
@@ -43,7 +43,7 @@
   </div>
 
   <div class="mySlides1">
-    <img src="Em&JaimeinCanada.jpg" style="width:100%">
+    <img src="shoesandboots.jpg" style="width:100%">
   </div>
 
   <div class="mySlides1">
@@ -53,16 +53,46 @@
   <div class="mySlides1">
     <img src="engagement ring photo.jpg" style="width:100%">
   </div>
+  
+  <div class="mySlides1">
+    <img src="in dc.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides1">
+    <img src="Em&JaimeinCanada.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides1">
+    <img src="tongueout.JPG" style="width:100%">
+  </div>
+  
+  <div class="mySlides1">
+    <img src="scarfandglasses.JPG" style="width:100%">
+  </div>
 
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 
-  <p></p>
+  <p id="aboutUs"></p>
 </div>
 
 <div class="aboutUs">
-    <p></p>
+    <p>Jaime and Emerald met in early 2014 while working together at the Portland airport. 
+      They were friends until 2017 when they started dating. They somehow wound up moving
+       to Portland in 2013 when they were both 20. 
+       <br><br>
+       Jaime came from East Palo Alto, California. Emerald came from Ketchikan, Alaska. 
+       Now they live happily in Vancouver, Washington with their 6 yr old doggo Oso. They 
+       love to travel and visit new places, their goal is to visit all 50 states, and every 
+       national main park.They have done about half the states, and a handful of national parks. 
+       They also enjoy international travel. 
+       <br id="ketchikan"><br>
+       The first vacation they took was to PVR Mexico, 
+       and last year they took a Caribbean cruise. This coming year they hope to honeymoon in 
+       Tokyo, Japan. 
+      </p>
 </div>
+
 
 <div class="slideshow-container">
   <div class="mySlides2" id="mySlides2">
@@ -75,6 +105,26 @@
 
   <div class="mySlides2">
     <img src="OsoWithSalmon2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="ketchikanisland.jpg" style="width:100%">
+  </div>
+ 
+  <div class="mySlides2">
+    <img src="river and forest.jpg" style="width:100%">
+  </div>
+ 
+  <div class="mySlides2">
+    <img src="watterfall.jpg" style="width:100%">
+  </div>
+ 
+  <div class="mySlides2">
+    <img src="fog.jpg" style="width:100%">
+  </div>
+ 
+  <div class="mySlides2">
+    <img src="snow.JPG" style="width:100%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -123,7 +173,7 @@
       <li><a href="https://capefoxlodge.com/" >Cape Fox Lodge</a></li>
       <li><a href="https://www.wyndhamhotels.com/trademark/ketchikan-alaska/gilmore-hotel-trademark-collection/overview?CID=LC:4d7auublw4ufaga:54208&iata=00093796">Gilmore Hotel</a></li>
       <li><a href="https://www.wyndhamhotels.com/super-8/ketchikan-alaska/super-8-ketchikan/overview?CID=LC:yytq4fvvehxh7se:03099&iata=00093796">Super 8</a></li>
-      <li><a href="https://www.creekstreet.com/">Inn at Creek Street</a></li>
+      <li><a href="https://www.creekstreet.com/" id="rsvp">Inn at Creek Street</a></li>
       <li><a href="https://www.theketchinn.com/">The Ketch</a></li>
       <li><a href="https://www.stayinalaska.com">Black Bear Inn</a></li>
      </ul>
@@ -145,7 +195,7 @@
       <input type="text" name="message" placeholder="We'll be there! or We won't be able to make it" required class="text"> <br><br>
       <input type="hidden" name="_next" value="https://jreal1993.github.io/thankyou/">
       <input type="hidden" name="_captcha" value="false">
-      <button type="submit" class="button">Send</button>
+      <button type="submit" class="button" id="button">Send</button>
     </form>
     </div>
   </div>
