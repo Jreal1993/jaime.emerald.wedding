@@ -93,10 +93,9 @@ h1 {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #d6a553;
-    
-    
+    background-color: #d6a553;    
 }
+
 
 @media(max-width:768px) {
     .hamburger {
